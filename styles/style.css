@@ -106,8 +106,8 @@ main section{
 } */
 
 .our-features{
-    padding: 0 20px;
-    max-width: 500px;
+    padding: 0 100px;
+    /* max-width: 500px; */
     /* height: auto; */
 }
 
@@ -131,6 +131,48 @@ main section{
     color: #727272;
     font-size: 1rem;
     padding-bottom: 30px;
+}
+
+/* facts related style */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 80px;
+}
+.facts-title{
+    font-size: 2.8rem;
+    color: #131313;
+    margin-bottom: 50px;
+}
+.facts-description{
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 400;
+    margin-bottom: 100px;
+    max-width: 540px;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.fact-number{
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+}
+
+.fact-name{
+    font-size: 1.2rem;
+    color: #727272;
+    font-weight: 400;
 }
 
 
@@ -160,6 +202,26 @@ main section{
         max-width: 100%;
         /* text-align: center; */
     }  
+
+    /* facts */
+    .facts-title, .facts-description{
+        margin-left: 30px;
+    }
+
+    .facts-container{
+        /* grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 30px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        
+    }
+
+    .fact-card{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -170,4 +232,30 @@ main section{
         text-align: center;
     }
 
+    /* facts */
+    .facts-title{
+        text-align: center;
+    }
+    .facts-description{
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .facts-container{
+        /* grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 30px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        
+    }
+
+    .fact-card{
+        margin-bottom: 20px;
+    }
 }
+
